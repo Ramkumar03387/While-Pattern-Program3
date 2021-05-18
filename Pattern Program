@@ -1,0 +1,26 @@
+
+public class Pattern {
+public static void main(String[] args) {
+Pattern s1 = new Pattern();
+s1.method();
+}
+public void method()
+{
+	int row = 1;
+	int i = 2;
+	while (row<=6)
+	{
+		int col = 6;
+		int i1 = 0;
+		while (col>=row)
+		{
+			System.out.print(i+i1+" ");
+			i1+=i;
+			col--;	
+		}
+		System.out.println();
+		row++;
+		i+=2;
+	}
+}
+}
